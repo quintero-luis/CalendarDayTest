@@ -11,7 +11,8 @@ import SwiftUI
 struct CalendarDayApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: DayListViewModel())
+                .modelContainer(for: DayModel.self) // Using SwiftData to save models of type DayModel
         }
     }
 }

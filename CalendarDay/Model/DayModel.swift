@@ -8,6 +8,7 @@
 import Foundation
 import SwiftData
 
+// TODO: pq se inicializa?
 @Model
 class DayModel {
     var dayNote: String
